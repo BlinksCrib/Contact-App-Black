@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact App</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- form modal -->
+    <div id="fullscreen-div"></div>
+    <form class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h3 id="modal-title">Add contess</h3>
+                <button type="button" id="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-main">
+
+                <div class="modal-row">
+                    <div class="modal-col">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="Name" class="form-control" name="full_name">
+                    </div>
+                </div>
+
+                <div class="modal-row">
+                    <div class="modal-col">
+                        <label for="">Phone Number</label>
+                        <input type="text" placeholder="Number" class="form-control" name="number">
+                    </div>
+                </div>
+                <div class="modal-row">
+                    <div class="modal-col">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Email" class="form-control" name="email">
+                    </div>
+                </div>
+
+                <div class="modal-row" id="modal-btns">
+                    <button type="submit" id="save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- end of form modal -->
+
+    <!-- contact book home -->
+    <div class="cont-book" id="cont-book">
+        <div class="cont-book-content">
+            <div class="contact-main-upper">
+          <h2>Phone</h2>
+          <p></p>
+        </div>
+        <div class="contact-toolbox-div">
+          <input type="text" placeholder='Search name or number' id="search-data"/> <span id="add-btn"  class="btn">
+            <i class="fa-solid fa-circle-plus" style="color: white;"></i></span>
+        </div>
+
+            <div class="cont-book-list" id="cont-book-list">
+                <table class="cont-table">
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- end of contess book home -->
+    <h4 id="found" class="text-center mt-3"></h4>
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
